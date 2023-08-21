@@ -1,0 +1,21 @@
+/* Regular */
+@font-face {
+  font-family: "ClearSansRegular";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/ClearSansRegular.woff2") format("woff2");
+}
+
+/* Regular */
+@font-face {
+  font-family: ClearSansBold;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/ClearSansBold.woff2") format("woff2");
+}
+
+/* Black 900 */
+@font-face {
+  font-family: PoppinsBlack;
+  src: url("../fonts/Poppins-Black.ttf") format("truetype");
+}

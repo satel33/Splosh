@@ -1,0 +1,51 @@
+.productCardStyle {
+  max-width: 400px;
+  cursor: pointer;
+  text-decoration: none;
+  padding-bottom: var(--space-md);
+  -webkit-box-shadow: 0 0.2rem 1.6rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.2rem 1.6rem rgba(0, 0, 0, 0.5);
+  background-color: #191c1f;
+  border-radius: 0.2rem;
+  position: relative;
+  bottom: 25px;
+  z-index: 5;
+}
+
+.productImageStyle {
+  /* margin-bottom: var(--space-md); */
+}
+
+.productDetailsStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.3rem 1.5rem 1.5rem;
+}
+
+.productVendorStyle {
+  font-size: var(--text-sm);
+  color: var(--text-color-secondary);
+}
+
+.productHeadingStyle {
+  font-family: ClearSansBold;
+  width: 100%;
+  font-size: var(--text-lg);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: var(--dense);
+  color: var(--text-color-inverted);
+  margin-bottom: 1rem;
+}
+
+.productPrice {
+  color: var(--text-color-pool);
+  font-family: ClearSansBold;
+  font-size: var(--text-sm);
+  margin-bottom: 0.44rem;
+}
+
+.productSubtitleStyle {
+  color: var(--text-color-platinum);
+}

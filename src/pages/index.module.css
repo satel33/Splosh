@@ -1,0 +1,48 @@
+.container {
+  padding-left: var(--size-gutter-raw);
+  padding-right: var(--size-gutter-raw);
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-5xl);
+  margin: auto;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding-bottom: var(--space-3xl);
+  }
+}
+
+.intro {
+  color: var(--platinum-2);
+  padding-bottom: var(--space-lg);
+  font-size: var(--text-display);
+  line-height: var(--dense);
+}
+
+/*
+.callOut {
+  color: var(--text-color-secondary);
+  padding-bottom: var(--space-lg);
+  font-size: var(--text-display);
+  letter-spacing: var(--tight);
+  line-height: var(--dense);
+  font-weight: var(--bold);
+  display: inline;
+}
+ */
+
+.callOut > strong {
+  text-decoration: underline;
+}
+
+.callToAction {
+  font-size: var(--text-prose);
+  line-height: var(--dense);
+  line-height: var(--dense);
+  letter-spacing: var(--tight);
+  color: var(--text-color-secondary);
+}
+
+.deployButton {
+  margin-top: var(--space-lg);
+}

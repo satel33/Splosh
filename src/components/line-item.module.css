@@ -1,0 +1,42 @@
+.title {
+  font-size: var(--text-xl);
+  font-weight: var(--semibold);
+  line-height: var(--solid);
+  padding-bottom: var(--space-md);
+  color: var(--text-color-inverted);
+}
+
+.variant {
+  font-size: var(--text-md);
+  text-transform: capitalize;
+  padding-bottom: var(--space-sm);
+}
+
+.remove button {
+  color: var(--text-color-platinum);
+  font-size: var(--text-md);
+
+  display: inline-flex;
+  align-items: center;
+}
+
+.remove button svg {
+  margin-right: var(--space-md);
+}
+
+.totals {
+  text-align: right;
+}
+
+.priceColumn,
+.totals {
+  display: none;
+  color: var(--text-color-platinum);
+}
+
+@media (min-width: 640px) {
+  .priceColumn,
+  .totals {
+    display: block;
+  }
+}

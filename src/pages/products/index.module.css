@@ -1,0 +1,7 @@
+.title {
+  font-size: var(--text-display);
+  font-weight: var(--bold);
+  margin: 0;
+  padding: var(--space-4xl) var(--size-gutter-raw) var(--space-2xl);
+  color: var(--text-color-platinum);
+}

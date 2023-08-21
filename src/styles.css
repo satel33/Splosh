@@ -1,0 +1,230 @@
+svg text {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.annotationDescription {
+    /*pointer-events: none;*/
+    font-size: 14px;
+    position: absolute;
+    top: 20px;
+    padding: 1em;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.66);
+    border-radius: 0.5em;
+    display: block;
+    color: white;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+#annotationsPanel {
+    position: absolute;
+    top: 355px;
+    left: 48px;
+    width: auto;
+    height: auto;
+    z-index: 3;
+}
+
+@media (max-width: 500px) {
+    #annotationsPanel {
+        transform: scale(0.7);
+        left: 0;
+        top: 200px;
+    }
+}
+
+#annotationsPanel ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.annotationButton {
+    width: 160px;
+    height: 70px;
+    background-color: rgba(0.25, 0.25, 0.25, 0.5);
+    text-align: left;
+    padding-left: 20px;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: monospace;
+    border-width: 2px;
+    border-style: outset;
+}
+
+@media (max-width: 500px) {
+    .annotationButton {
+        padding-left: 10px;
+        width: 150px;
+        height: 50px;
+    }
+}
+
+.annotationButton:hover {
+    background-color: rgba(0.25, 0.25, 0.25, 0.6);
+}
+
+/*OVERLAY CSS*/
+
+.overlay-container {
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) -1%, rgba(0, 0, 0, 0.6) 100%);
+    z-index: 0;
+}
+
+@media (max-width: 500px) {
+    .overlay-container {
+        display: none;
+    }
+}
+
+:root {
+    --primary: white;
+    --global-black: #221b18;
+    --global-black-mobile: rgba(34, 27, 24, 0.7);
+    --heading-size: 70px;
+    --mobile-heading-size: 40px;
+    --mobile-heading-size-2: 10px;
+}
+
+.hero_title_big {
+    font-family: "PoppinsBlack", sans-serif;
+    text-transform: uppercase;
+    font-size: var(--heading-size);
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: -4px;
+    line-height: 0.8;
+    color: var(--primary);
+    pointer-events: none;
+}
+
+@media (max-width: 500px) {
+    .hero_title_big {
+        font-size: var(--mobile-heading-size);
+        top: 105px;
+        left: 28px;
+    }
+}
+
+.hero_subtitle_small {
+    position: absolute;
+    width: 200px;
+    top:195px;
+    font-size: 13px;
+    color: white;
+    pointer-events: none;
+}
+
+@media (max-width: 500px) {
+    .hero_subtitle_small {
+        top: 0;
+        right: 0;
+        font-size: 0.7rem;
+        width: 170px;
+    }
+}
+
+.heading__outer:nth-last-child(1) .heading__inner {
+    z-index: 1;
+}
+
+.heading__outer:nth-last-child(2) .heading__inner {
+    z-index: 2;
+}
+
+.heading__outer:nth-last-child(3) .heading__inner {
+    z-index: 3;
+}
+
+.heading__outer:nth-last-child(4) .heading__inner {
+    z-index: 4;
+}
+
+.heading__outer:nth-last-child(5) .heading__inner {
+    z-index: 5;
+}
+
+.heading__outer:nth-last-child(6) .heading__inner {
+    z-index: 6;
+}
+
+.heading__outer:nth-last-child(7) .heading__inner {
+    z-index: 7;
+}
+
+.heading__outer:nth-last-child(8) .heading__inner {
+    z-index: 8;
+}
+
+.heading__outer {
+    display: block;
+}
+
+.heading__inner {
+    display: inline-block;
+    position: relative;
+    text-shadow: 0 calc(var(--heading-size) / 5) 20px var(--global-black), 0 calc(var(--heading-size) / 6) 20px var(--global-black);
+}
+
+@media (max-width: 500px) {
+    .heading__inner {
+        text-shadow: 0 calc(var(--mobile-heading-size-2) / 5) 10px var(--global-black-mobile), 0 calc(var(--mobile-heading-size) / 6) 10px var(--global-black-mobile);
+    }
+}
+
+.heading__frakt {
+    background: linear-gradient(125deg, rgba(0,166,237,1) 0%, rgba(38,201,252,1) 100%);
+    padding: 0.3rem 0.6rem 0.3rem 0.3rem;
+    text-shadow: 1px 1px 1px #006895;
+    letter-spacing: -1px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+@media (max-width: 500px) {
+    .heading__frakt {
+        padding: 0.2rem 0.4rem 0.2rem 0.2rem;
+        letter-spacing: -1px;
+        font-size: 0.7rem;
+        position: relative;
+        top: 21px;
+        left: 50px;
+    }
+}
+
+/*SCROLLBAR*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    height: 4rem;
+    border-radius: 0.5rem;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-color: #7575b6;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #5757a6;
+}

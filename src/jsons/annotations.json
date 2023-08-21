@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Teknisk rigg",
+    "description": "Rigg for teknisk utstyr",
+    "camPos": {
+      "x": 6,
+      "y": 0.3,
+      "z": 8.5
+    },
+    "lookAt": {
+      "x": 6.6,
+      "y": 0.0,
+      "z": 6
+    }
+  },
+  {
+    "title": "Gjennomsiktig PVC",
+    "description": "Gjennomsiktig PVC",
+    "camPos": {
+      "x": -0.5,
+      "y": 0.1,
+      "z": 7
+    },
+    "lookAt": {
+      "x": 0.08,
+      "y": 0.6,
+      "z": 6
+    }
+  }
+]

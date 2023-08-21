@@ -1,0 +1,13 @@
+body {
+  font-family: "ClearSansRegular";
+  background-color: #191c1f;
+  color: var(--text-color);
+}
+
+.gatsby-image-wrapper {
+  margin: auto;
+}
+
+.gatsby-image-wrapper [data-main-image] {
+  border-radius: var(--radius-sm);
+}
